@@ -6,6 +6,6 @@ INSERT INTO regiones (id, nombre) VALUES (5, 'Asia');
 INSERT INTO regiones (id, nombre) VALUES (6, 'Africa');
 INSERT INTO regiones (id, nombre) VALUES (7, 'Oceanía');
 INSERT INTO regiones (id, nombre) VALUES (8, 'Antártida');
-INSERT INTO `clientes` (`id`, `apellido`, `createAt`, `email`, `nombre`,`region_id`) VALUES ('1', 'ZALAZAR', '2022-11-09 00:00:00', 'daniel@unicauca.edu.co', 'LUCIA',4);
+INSERT INTO `clientes` (`id`, `apellido`, `createAt`, `email`, `nombre`,`region_id`) VALUES ('1', 'ZALAZAR', '2022-11-09 00:00:00', 'Luis@unicauca.edu.co', 'LUIZ',4);
 
 
