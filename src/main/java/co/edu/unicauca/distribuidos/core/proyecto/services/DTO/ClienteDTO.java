@@ -12,6 +12,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import co.edu.unicauca.distribuidos.core.proyecto.models.Region;
 
 @Getter
@@ -32,7 +34,8 @@ public class ClienteDTO {
 	@PastOrPresent(message = "{user.date.past}")
 	private Date createAt;
 	
-	private RegionDTO region;
+	@NotNull(message = "{user.region.empty}")
+	private Region region;
    
 	
 }

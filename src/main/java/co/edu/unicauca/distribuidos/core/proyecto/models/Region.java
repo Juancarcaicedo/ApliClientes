@@ -14,13 +14,6 @@ import lombok.Getter;
 public class Region {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-private Long region_id;
-private String nombre_region;
-public Long getId() {
-return region_id;
-}
-public void setId(Long id) {
-this.region_id = id;
-}
-
+private Long id;
+private String nombre;
 }

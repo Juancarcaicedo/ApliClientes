@@ -12,6 +12,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
@@ -31,6 +34,7 @@ public class ClienteEntity {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="region_id")
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	@Fetch(FetchMode.JOIN)
 	private  Region region;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
